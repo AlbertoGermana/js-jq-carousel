@@ -6,16 +6,14 @@ cerco di fare un refactoring del mio codice per renderlo il più chiaro, lineare
 /* attendo il caricamento della pagina */
 $(document).ready(function(){
     // al click della freccia sinistra
-      $('.slider_left_arrow a').click(
-          /* prevImg */
-          prevImg
-      );
+      $('.slider_left_arrow a').click(prevImg);
     
     // al click della freccia destra
-      $('.slider_right_arrow').click(
-          nextImg
-      );
+      $('.slider_right_arrow').click(nextImg);
     
+    // al click di un pallino
+    $('.slider_circles i').click(dotFunction);
+
       // funzione next
     function nextImg() { 
         // salvo ref a img attiva al momento del click
@@ -63,6 +61,28 @@ $(document).ready(function(){
          // console.log(imgActive.next());
        }
      }
+
+     function dotFunction(){
+         // salvo ref a img attiva al momento del click
+        var imgActive = $('.slider_viewer img.active');
+         // salvo il pallino attivo
+        var ballActive = $('.slider_circles i.active');
+        //elimino la classe active alle immagini
+        imgActive.removeClass('active'); 
+        //elimino la classe active ai pallini
+        ballActive.removeClass('active');
+        // memorizzo posizione del pallino che ho cliccato
+        var clickedDot = $(this).index() + 1; 
+        //aggiungo classe active all'immagine relativa al pallino cliccato
+        $('.slider_viewer img:nth-child('+ clickedDot +')').addClass('active');
+        //aggiungo classe active al pallino cliccato
+        $('.slider_circles i:nth-child('+ clickedDot +')').addClass('active');
+     }
+
+     
+
+
+
     });
 
 
