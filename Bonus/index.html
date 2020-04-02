@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Er Carousel</title>
+</head>
+<body>
+    <header> 
+        <nav>
+            <h1>Torneremo a fotografare la natura</h1>
+            <h4>Tags: #iorestoamare, #iorestoincampagna, #iorestoinmontagna</h4>
+        </nav> 
+    </header>
+
+
+    <main>
+        <div class="container">
+            <!-- container dello slider -->
+            <div class="main_slider_container">
+                <div class="slider_container">
+                    <!-- freccia sinistra -->
+                    <div class="slider_left_arrow">
+                        <a href="#">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                    </div>
+                    <!-- parte principale dello slider -->
+                    <div class="slider_viewer">
+                        <img class="first active" src="assets/img/slide01.jpg" alt="natura1">
+                        <img class="" src="assets/img/slide02.jpg" alt="natura2">
+                        <img class="" src="assets/img/slide03.jpg" alt="natura3">
+                        <img class="" src="assets/img/slide04.jpg" alt="natura4">
+                        <img class="last" src="assets/img/slide05.jpg" alt="natura5">
+                    </div>
+                    <!-- freccia destra -->
+                    <div class="slider_right_arrow">
+                        <a href="#">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider_circles">
+                    <i class="fas fa-circle first active"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle last"></i>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+</body>
+</html>
