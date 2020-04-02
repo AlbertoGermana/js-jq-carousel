@@ -8,30 +8,51 @@
     <title>Er Carousel</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Torneremo a fotografare la natura</h1>
-        <h4>Tags: #iorestoamare, #iorestoincampagna, #iorestoinmontagna</h4>
+    <header> 
+        <nav>
+            <h1>Torneremo a fotografare la natura</h1>
+            <h4>Tags: #iorestoamare, #iorestoincampagna, #iorestoinmontagna</h4>
+        </nav> 
+    </header>
 
-        <!-- container dello slider -->
-        <div class="slider_container">
-            <!-- freccia sinistra -->
-            <div class="slider_left_arrow">
-                <a href="#">
-                    <i class="fas fa-angle-left"></i>
-                </a>
-            </div>
-            <!-- parte principale dello slider -->
-            <div class="slider_viewer">
-                <div> immagine </div>
-            </div>
-            <!-- freccia destra -->
-            <div class="slider_right_arrow">
-                <a href="#">
-                    <i class="fas fa-angle-right"></i>
-                </a>
+
+    <main>
+        <div class="container">
+            <!-- container dello slider -->
+            <div class="main_slider_container">
+                <div class="slider_container">
+                    <!-- freccia sinistra -->
+                    <div class="slider_left_arrow">
+                        <a href="#">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                    </div>
+                    <!-- parte principale dello slider -->
+                    <div class="slider_viewer">
+                        <img class="first" src="assets/img/slide01.jpg" alt="natura1">
+                        <img class="" src="assets/img/slide02.jpg" alt="natura2">
+                        <img class="" src="assets/img/slide03.jpg" alt="natura3">
+                        <img class="" src="assets/img/slide04.jpg" alt="natura4">
+                        <img class="last" src="assets/img/slide05.jpg" alt="natura5">
+                    </div>
+                    <!-- freccia destra -->
+                    <div class="slider_right_arrow">
+                        <a href="#">
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="slider_circles">
+                    <a href="#"><i class="fas fa-circle active"></i></a>
+                    <a href="#"><i class="fas fa-circle"></i></a> 
+                    <a href="#"><i class="fas fa-circle"></i></a> 
+                    <a href="#"><i class="fas fa-circle"></i></a> 
+                    <a href="#"><i class="fas fa-circle"></i></a> 
+                </div>
             </div>
         </div>
-    </div>
+
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
